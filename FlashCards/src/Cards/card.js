@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './card.css';
+// import store from '../index.js';
+// import { connect } from 'react-redux';
 
 const card = (props) => (
     <div className="card-container">

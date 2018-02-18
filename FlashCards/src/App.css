@@ -1,9 +1,19 @@
 .cardRow{
   margin-top: 10%;
   padding: 5px;
-
 }
 
 .buttonRow{
   padding: 5px;
+  display: inline-block;
+  margin: auto;
 }
+
+.allButtons{
+  text-align: center;
+}
+
+/*
+body {
+  background-color: lightblue;
+}*/

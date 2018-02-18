@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import './App.css';
 import Card from './Cards/card.js';
 import Button from './Buttons/button.js';
+// import { Provider } from 'react-redux';
+// import store from './index.js';
+// import ReactDOM from 'react-dom';
+
+//Database
 import { config } from './db.js';
 import firebase from 'firebase/app';
 import 'firebase/database';
@@ -54,13 +59,27 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+          <nav className="navbar navbar-inverse">
+              <div className="container-fluid">
+                  <div className="navbar-header">
+                      <a className="navbar-brand" href="#">Filters:</a>
+                  </div>
+                  <button className="btn btn-primary navbar-btn">Java</button>
+                  <button className="btn btn-success navbar-btn">Python</button>
+                  <button className="btn btn-info navbar-btn">JS</button>
+                  <button className="btn btn-warning navbar-btn">SQL</button>
+                  <button className="btn btn-danger navbar-btn">Other</button>
+              </div>
+          </nav>
           <div className="cardRow">
             <Card question={this.state.currentCard.question}
                   answer={this.state.currentCard.answer}
             />
           </div>
-          <div className="buttonRow">
-              <Button drawCard = {this.updateCard}/>
+          <div className="allButtons">
+              <div className="buttonRow">
+                  <Button drawCard = {this.updateCard}/>
+              </div>
           </div>
       </div>
     );
