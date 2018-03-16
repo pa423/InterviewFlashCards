@@ -7,23 +7,23 @@ class Button extends Component{
     constructor(props){
         super(props);
 
-        this.drawCard = this.drawCard.bind(this);
+        this.selectCard = this.selectCard.bind(this);
     }
 
     // getRandom()
     // {
-    //     store.dispatch(drawCard());
+    //     store.dispatch(selectCard());
     // }
 
-    drawCard(){
-        this.props.drawCard();
+    selectCard(){
+        this.props.selectCard();
     }
 
     render(props){
         return(
             <div className="buttonContainer">
                 <button className="btn" >Previous</button>
-                <button className="btn" onClick={this.drawCard}>Random</button>
+                <button className="btn" onClick={this.selectCard}>Random</button>
                 <button className="btn" >Next</button>
             </div>
         )

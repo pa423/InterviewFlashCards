@@ -1,53 +1,53 @@
 .card-container {
     cursor: pointer;
-    height: 400px;
-    width: 400px;
-    perspective: 800px;
+    height: 450px;
+    width: 450px;
+    perspective: 700px;
     position: relative;
     margin: auto;
     transition: ease-in;
 }
 
 .card {
-    height: 400px;
-    width: 400px;
+    height: 450px;
+    width: 450px;
     position: absolute;
     border: 2px solid dodgerblue;
     transform-style: preserve-3d;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.5s ease-in-out;
     overflow: hidden;
 }
 
 .card:hover {
     transform: rotateY(180deg);
-    transition: all 0.4s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .card .front {
-    height: 400px;
-    width: 400px;
+    height: 450px;
+    width: 450px;
     backface-visibility: hidden;
     position: absolute;
     overflow: hidden;
     text-align: center;
-    background-color: rgba(255, 251, 251, 1);
+    background-color: beige;
 }
 
 .card .back {
-    height: 400px;
-    width: 400px;
+    height: 450px;
+    width: 450px;
     text-align: center;
     transform: rotateY(180deg);
 }
 
 .question{
-    color: #333;
-    font-size: 2.3em;
+    color: black;
+    font-size: 2.2em;
     padding-top: 40%;
 }
 
 .answer{
-    color: #333;
-    font-size: 4.3em;
+    color: black;
+    font-size: 4.2em;
     padding-top: 20%;
 }

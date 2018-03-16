@@ -78,7 +78,7 @@ class App extends Component {
           </div>
           <div className="allButtons">
               <div className="buttonRow">
-                  <Button drawCard = {this.updateCard}/>
+                  <Button selectCard = {this.updateCard}/>
               </div>
           </div>
       </div>
